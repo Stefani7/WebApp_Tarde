@@ -14,7 +14,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebApp_Tarde</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                                               aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -28,17 +28,22 @@
                         <li class="nav-item">
                             <a href="/Home/Login" class="nav-link text-dark">Login</a>
                         </li>
-                    
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Cadastro
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="/clientes/lista">Clientes</a></li>
-                                <li><a class="dropdown-item" href="#">Produtos</a></li>
+                                @*<li><a class="dropdown-item" href="#">Produtos</a></li>*@
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="/Usuarios/Cadastro">Usuários</a></li>
-                                <li><a class="dropdown-item" href="/Usuarios/Index">Lista de Usuários</a></li>
+                                <li><a class="dropdown-item" href="/Usuarios/Index">Lista de Usuárisos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="/Produtos/Cadastro">Produtos</a></li>
+                                <li><a class="dropdown-item" href="/Produtos/Lista">Lista de Produtos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="/Fornecedores/Cadastro">Fornecedores</a></li>
+                                <li><a class="dropdown-item" href="/Fornecedores/Lista">Lista de Fornecedores</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -51,6 +56,8 @@
             @RenderBody()
         </main>
     </div>
+
+
 
     <footer class="border-top footer text-muted">
         <div class="container">
